@@ -22,9 +22,12 @@ namespace Catalog.API.Repositories
             await _context.Products.InsertOneAsync(product);
         }
 
-        public Task<bool> DeleteProduct(string id)
+        public async Task<bool> DeleteProduct(string id)
         {
-            throw new NotImplementedException();
+            FilterDefinition<Product> filter = Builders<Product>.Filter.Eq(p => p.Id, id);
+            DeleteResult deleteResult = await _context.Products.DeleteOneAsync(filter);
+
+            return deleteResult.IsAcknowledged && deleteResult.DeletedCount > 0;
         }
 
         public async Task<Product> GetProduct(string id)
@@ -51,9 +54,11 @@ namespace Catalog.API.Repositories
             return await _context.Products.Find(p => true).ToListAsync();
         }
 
-        public Task<bool> UpdateProduct(Product product)
+        public async Task<bool> UpdateProduct(Product product)
         {
-            throw new NotImplementedException();
+            var updateResult = await _context.Products.ReplaceOneAsync(filter: g => g.Id == product.Id, replacement: product);
+
+            return updateResult.IsAcknowledged && updateResult.ModifiedCount > 0;
         }
     }
 }
