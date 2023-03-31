@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.4.33103.184
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32413.511
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{41209BD9-B830-4027-AAE4-D7B2BA226397}"
 EndProject
@@ -17,7 +17,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Basket.API", "Services\Bask
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Discount", "Discount", "{AFA6CF8F-53B2-4C0D-A83D-26DF083BB8F1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Discount.API", "Services\Discount\Discount.API\Discount.API.csproj", "{6D3E8E33-711B-418B-97A7-C564CC37191B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Discount.API", "Services\Discount\Discount.API\Discount.API.csproj", "{6D3E8E33-711B-418B-97A7-C564CC37191B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Discount.Grpc", "Services\Discount\Discount.Grpc\Discount.Grpc.csproj", "{AF8945B6-F10A-47A6-8B9F-D4135DAB538D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,10 @@ Global
 		{6D3E8E33-711B-418B-97A7-C564CC37191B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D3E8E33-711B-418B-97A7-C564CC37191B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D3E8E33-711B-418B-97A7-C564CC37191B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF8945B6-F10A-47A6-8B9F-D4135DAB538D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF8945B6-F10A-47A6-8B9F-D4135DAB538D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF8945B6-F10A-47A6-8B9F-D4135DAB538D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF8945B6-F10A-47A6-8B9F-D4135DAB538D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -52,6 +58,7 @@ Global
 		{545D2807-5D58-404D-A63B-C72FCA1E69D3} = {34F4BB73-EBBE-4921-A504-B67991646601}
 		{AFA6CF8F-53B2-4C0D-A83D-26DF083BB8F1} = {41209BD9-B830-4027-AAE4-D7B2BA226397}
 		{6D3E8E33-711B-418B-97A7-C564CC37191B} = {AFA6CF8F-53B2-4C0D-A83D-26DF083BB8F1}
+		{AF8945B6-F10A-47A6-8B9F-D4135DAB538D} = {AFA6CF8F-53B2-4C0D-A83D-26DF083BB8F1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D2FC9C7B-5248-4CDC-8C7E-DE1D2BBE83F6}
