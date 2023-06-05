@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.32413.511
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33627.172
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{41209BD9-B830-4027-AAE4-D7B2BA226397}"
 EndProject
@@ -19,7 +19,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Discount", "Discount", "{AF
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Discount.API", "Services\Discount\Discount.API\Discount.API.csproj", "{6D3E8E33-711B-418B-97A7-C564CC37191B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Discount.Grpc", "Services\Discount\Discount.Grpc\Discount.Grpc.csproj", "{AF8945B6-F10A-47A6-8B9F-D4135DAB538D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Discount.Grpc", "Services\Discount\Discount.Grpc\Discount.Grpc.csproj", "{AF8945B6-F10A-47A6-8B9F-D4135DAB538D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ordering", "Ordering", "{0DD3462C-2EEF-4376-9B3E-7B28E648746F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,6 +61,7 @@ Global
 		{AFA6CF8F-53B2-4C0D-A83D-26DF083BB8F1} = {41209BD9-B830-4027-AAE4-D7B2BA226397}
 		{6D3E8E33-711B-418B-97A7-C564CC37191B} = {AFA6CF8F-53B2-4C0D-A83D-26DF083BB8F1}
 		{AF8945B6-F10A-47A6-8B9F-D4135DAB538D} = {AFA6CF8F-53B2-4C0D-A83D-26DF083BB8F1}
+		{0DD3462C-2EEF-4376-9B3E-7B28E648746F} = {41209BD9-B830-4027-AAE4-D7B2BA226397}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D2FC9C7B-5248-4CDC-8C7E-DE1D2BBE83F6}
